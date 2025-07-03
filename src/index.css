@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #f4f4f4;
+}
+body {
+  background: linear-gradient(to right, #fff, #f8f9fa);
+  font-family: 'Segoe UI', sans-serif;
+  color: #222;
+}
+body {
+  background: linear-gradient(to right, #fff, #f8f9fa);
+  font-family: 'Segoe UI', sans-serif;
+}
+@media (max-width: 576px) {
+  h2 {
+    font-size: 1.3rem;
+  }
+  .card-title {
+    font-size: 1rem;
+  }
+  .card-body {
+    padding: 0.75rem;
+  }
+}

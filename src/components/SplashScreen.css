@@ -1,0 +1,19 @@
+.splash-screen {
+  background-color: #c00000;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-direction: column;
+  text-align: center;
+}
+
+.logo {
+  width: 150px;
+}
+
+.slogan {
+  margin-top: 20px;
+  font-size: 24px;
+}
