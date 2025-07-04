@@ -8,6 +8,7 @@ import Fans from './pages/Fans';
 import PlayerDetail from './pages/PlayerDetail';
 import SplashScreen from './components/SplashScreen';
 import Presidents from './pages/Presidents';
+import Contact from './pages/Contact';
 function App() {
   const [loading, setLoading] = useState(true);
 
@@ -34,6 +35,7 @@ function App() {
               {/* <Link className="nav-link" to="/formation">Formation</Link> */}
               <Link className="nav-link" to="/fans">Fans</Link>
               <Link className="nav-link" to="/presidents">Présidents</Link>
+              <Link className="nav-link" to="/contact">Contact</Link>
             </div>
           </div>
         </div>
@@ -48,7 +50,7 @@ function App() {
         <Route path="/fans" element={<Fans />} />
         <Route path="/player/:id" element={<PlayerDetail />} />
         <Route path="/presidents" element={<Presidents />} />
-
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
   );
