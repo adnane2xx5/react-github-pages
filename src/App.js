@@ -9,6 +9,7 @@ import PlayerDetail from './pages/PlayerDetail';
 import SplashScreen from './components/SplashScreen';
 import Presidents from './pages/Presidents';
 import Contact from './pages/Contact';
+import './App.css';
 function App() {
   const [loading, setLoading] = useState(true);
 
