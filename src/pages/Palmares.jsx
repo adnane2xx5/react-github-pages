@@ -1,89 +1,60 @@
-import React from 'react';
+import React from "react";
+import "./Palmares.css";
 
 const Palmares = () => {
-  const titres = [
-    {
-      competition: "Botola Pro (Championnat du Maroc)",
-      nb: 22,
-      annees: [
-        "1948", "1949", "1950", "1951", "1955", "1957", "1966", "1969", "1976", "1977", "1978", "1986", "1990", "1991", "1993", "2006", "2010", "2015", "2017", "2019", "2021", "2022",  ]
-    },
-    {
-      competition: "Coupe du Trône",
-      nb: 9,
-      annees: ["1970", "1978", "1979", "1981", "1989", "1994", "1997", "1998", "2001"]
-    },
-    {
-      competition: "Ligue des Champions CAF",
-      nb: 3,
-      annees: ["1992", "2017", "2022"]
-    },
-    {
-      competition: "Supercoupe CAF",
-      nb: 1,
-      annees: ["2018"]
-    },
-    {
-      competition: "Coupe Mohammed V",
-      nb: 1,
-      annees: ["1979"]
-    }
-  ];
+  return (
+    <div className="palmares-page">
+      <div className="palmares-overlay">
+        <div className="container text-center">
+          <h1 className="palmares-title">🏆 Palmarès du Wydad Athletic Club</h1>
+          <p className="palmares-subtitle">
+            Un des clubs les plus titrés d’Afrique et du Maroc
+          </p>
 
-  const finalesPerdues = [
-    { competition: "Ligue des Champions CAF", nb: 3, annees: ["2011", "2019", "2023"] },
-    { competition: "Coupe du Trône", nb: 6, annees: ["1999", "2004", "2013", "2015", "2020", "2023"] }
-  ];
-
-    return (
-    <div
-      style={{
-        backgroundImage: "url('https://digitalhub.fifa.com/transform/44ba6d72-4697-461b-99d0-295dfa3a16ae/FIFA-com_FCWC25_Team-Profile-Thumbnails_Wydad_3840x2160?&io=transform:fill,height:910,width:1536&quality=75')",
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        padding: '50px 20px',
-        minHeight: '100vh',
-        color: '#fff',
-        textShadow: '1px 1px 2px #000'
-      }}
-    >
-      <div className="container">
-        <h2 className="text-center text-light mb-4">🏆 Palmarès du Wydad Athletic Club</h2>
-
-        <p className="lead text-center mb-5">
-          Fondé le <strong>8 mai 1937</strong> à Casablanca, le Wydad est l’un des clubs les plus titrés d’Afrique.
-          Il représente la fierté nationale du Maroc, grâce à ses nombreux titres et à ses supporters légendaires.
-        </p>
-
-        <div className="row">
-          <div className="col-md-6">
-            <h4 className="text-warning">Titres remportés</h4>
-            <ul className="list-group">
-              {titres.map((t, index) => (
-                <li key={index} className="list-group-item bg-dark text-white">
-                  <strong>{t.competition}</strong> – {t.nb} titres
-                  <br />
-                  <small>Années : {t.annees.join(', ')}</small>
-                </li>
-              ))}
-            </ul>
+          {/* Section cartes trophées */}
+          <div className="trophies">
+            <div className="trophy-card">
+              <h2>Coupe d'Afrique des Clubs Champions</h2>
+              <p>3 titres : 1992, 2017, 2022</p>
+            </div>
+            <div className="trophy-card">
+              <h2>Botola Pro (Championnat du Maroc)</h2>
+              <p>22 titres (record national)</p>
+            </div>
+            <div className="trophy-card">
+              <h2>Coupe du Trône</h2>
+              <p>9 titres</p>
+            </div>
+            <div className="trophy-card">
+              <h2>Supercoupe de la CAF</h2>
+              <p>1 titre : 2018</p>
+            </div>
           </div>
 
-          <div className="col-md-6">
-            <h4 className="text-warning">Finales perdues</h4>
-            <ul className="list-group">
-              {finalesPerdues.map((f, index) => (
-                <li key={index} className="list-group-item bg-dark text-white">
-                  <strong>{f.competition}</strong> – {f.nb} finales
-                  <br />
-                  <small>Années : {f.annees.join(', ')}</small>
-                </li>
-              ))}
-            </ul>
+          {/* Section Timeline */}
+          <h2 className="timeline-title">📅 Moments Historiques</h2>
+          <div className="timeline">
+            <div className="timeline-item">
+              <span className="year">1992</span>
+              <p>Première Ligue des Champions CAF remportée 🏆</p>
+            </div>
+            <div className="timeline-item">
+              <span className="year">2017</span>
+              <p>Deuxième Ligue des Champions CAF, victoire face à Al-Ahly 🇪🇬</p>
+            </div>
+            <div className="timeline-item">
+              <span className="year">2022</span>
+              <p>Troisième Ligue des Champions CAF, victoire contre Al-Ahly au Maroc 🏟️</p>
+            </div>
           </div>
+
+          <footer className="palmares-footer">
+            <p>Le Wydad AC incarne la passion, la gloire et la fierté du football marocain. ❤️⚽</p>
+          </footer>
         </div>
       </div>
     </div>
   );
 };
+
 export default Palmares;

@@ -1,0 +1,45 @@
+.palmares-page {
+  background: url("https://sport.le360.ma/resizer/v2/TIHRCFMW6FBVPF6NA6R5EKU43M.png?auth=4ec8e7ab0791d7601b6856e42da7941f98ce152c3629fee43404f81e7f9ddda2&smart=true&width=1216&height=684") no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.palmares-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.palmares-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffdf00;
+}
+
+.trophies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.trophy-card {
+  background: rgba(255, 255, 255, 0.477);
+  color: black;
+  padding: 10px;
+  margin: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(255, 0, 0, 0.579);
+  width: 250px;
+}
+
+.timeline {
+  margin: 50px auto;
+  padding: 30px;
+  border-left: 4px solid #ff0000;
+  max-width: 600px;
+  text-align: left;
+}

@@ -1,0 +1,172 @@
+.presidents-page {
+  background: url("https://hayatoky.com/wp-content/uploads/Visuel_-83-ans-_-Wydad.png") no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  padding: 70px 40px;
+  color: rgba(255, 255, 255, 0.695);
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.701);
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ff0000;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 1.2rem;
+  color: #dddddd;
+}
+
+.presidents-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.president-card {
+  background: rgba(255, 255, 255, 0.538);
+  color: black;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgb(0, 0, 0);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.president-card:hover {
+  transform: translateY(-8px);
+}
+
+.president-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid #ff0000;
+}
+.president-card .years {
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.president-card .description {
+  font-size: 0.95rem;
+  color: #000000;
+}
+.president-card img {
+  width: 150px;          /* largeur fixe */
+  height: 150px;         /* hauteur fixe */
+  object-fit: cover;     /* garde le visage centré */
+  border-radius: 50%;    /* cercle */
+  border: 3px solid #ff0000;
+  margin-bottom: 15px;
+}
+
+.president-card {
+  background: white;
+  color: black;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.president-card:hover {
+  transform: translateY(-8px);
+}
+
+.president-card h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color: #c00; /* rouge Wydad */
+}
+
+.president-card .years {
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.president-card .description {
+  font-size: 0.95rem;
+  color: #333;
+}
+/* Carte de président */
+.president-card {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.president-card:hover {
+  transform: scale(1.05);
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 400px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  animation: fadeIn 0.3s ease;
+}
+
+.modal-content img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 3px solid #ff0000;
+}
+
+.modal-content h2 {
+  color: #c00;
+  margin-bottom: 10px;
+}
+
+.modal-content button {
+  margin-top: 15px;
+  padding: 8px 15px;
+  background: #c00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-content button:hover {
+  background: #900;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
