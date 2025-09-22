@@ -1,5 +1,5 @@
-import React from 'react';
-
+import React, { useState } from "react";
+import "./Fans.css";
 const tifos = [
   {
     id: 1,
@@ -49,36 +49,32 @@ const tifos = [
 ];
 
 const Fans = () => {
+  const [selectedTifo, setSelectedTifo] = useState(null);
+
   return (
-    <div
-      style={{
-        backgroundImage: "url('https://i.pinimg.com/736x/15/6c/c6/156cc6358d01dd90e0cd3570b2350ed9.jpg')",
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        padding: '50px 20px',
-        minHeight: '100vh',
-        color: '#fff',
-        textShadow: '1px 1px 3px black'
-      }}
-      >
-      <div className="container my-5">
-        <h2 className="text-center mb-4">❤️ Ultras Winners 2005 - Wydad Fans</h2>
-        <p className="text-center mb-4">
-          Ultras Winners 2005 est un groupe de fans soutenant le Wydad Atlhetic Club. Il a été fondé le 13 novembre 2005 par des jeunes amoureux de l'équipe. Ultras Winners a été classé parmi les meilleurs ultras du monde en 2015/2023/2022/2019 par le site « Ultra World » anglais : Ultras World spécialisé dans l'actualité ultras
-        </p>
-        <div className="row">
-          {tifos.map(tifo => (
-            <div key={tifo.id} className="col-md-4 mb-4">
-              <div className="card shadow-sm h-100">
-                <img src={tifo.image} alt={tifo.title} className="card-img-top" style={{ height: '300px', objectFit: 'cover' }} />
-                <div className="card-body">
-                  <h5 className="card-title">{tifo.title}</h5>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
+    <div className="fans-page">
+      <h1>🔥 Les Winners - Supporters du Wydad</h1>
+      <div className="tifos-grid">
+        {tifos.map((tifo) => (
+          <img
+            key={tifo.id}
+            src={tifo.image}
+            alt="Tifo Wydad"
+            onClick={() => setSelectedTifo(tifo)}
+          />
+        ))}
       </div>
+
+      {/* Modal */}
+      {selectedTifo && (
+        <div className="modal-overlay" onClick={() => setSelectedTifo(null)}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <img src={selectedTifo.image} alt="Tifo en grand" />
+            <p>{selectedTifo.description}</p>
+            <button onClick={() => setSelectedTifo(null)}>Fermer</button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
