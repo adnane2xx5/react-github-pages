@@ -18,8 +18,9 @@ const Home = () => {
       <section className="history">
         <h2>📖 Histoire du Wydad</h2>
         <p>
-          Fondé en 1937 à Casablanca, le Wydad AC est l’un des clubs les plus titrés 
-          d’Afrique et le symbole de la passion footballistique marocaine.
+          Le Wydad Athletic Club, également connu sous les noms de Wydad ou WAC, est l’un des clubs les plus emblématiques du Maroc. Fondé en 1937 à Casablanca, le club est réputé pour sa passion, sa résistance et ses succès.
+          Surnommé « Le Wydad », le club est connu pour ses couleurs : le rouge et le blanc. Les matchs à domicile se déroulent au Stade Mohamed V, également appelé le Stade d’Honneur ou Donor, une enceinte légendaire qui a été témoin de nombreux exploits du club.
+          Le Wydad Athletic Club a été créé par un groupe d’intellectuels et de jeunes résistants pendant l’occupation française du Maroc en 1937, notamment feu Mohamed Benjelloun. Il a d’abord débuté avec une équipe de water-polo avant de former sa section de football en 1939, avec le soutien du Père Jégo.
         </p>
         <Link to="/palmares" className="btn-secondary">Voir le palmarès</Link>
       </section>

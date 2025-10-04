@@ -1,0 +1,45 @@
+.team-page {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url("https://api.wydadplus.com/api/public/images/articles/ultras_winners_famille_wydad.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* couche sombre pour lisibilité */
+.team-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0);
+  z-index: 0;
+}
+
+.team-page .container {
+  position: relative;
+  z-index: 1;
+  color: rgb(255, 255, 255);
+}
+
+.team-page h2,
+.team-page h3 {
+  color: rgb(255, 0, 0);
+  font-weight: bold;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+/* cartes */
+.team-page .card {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-page .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(255, 0, 0, 0.4);
+}

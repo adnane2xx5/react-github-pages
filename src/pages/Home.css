@@ -1,12 +1,12 @@
 /* Hero Section */
 .hero {
-  background: url("https://fr.le360.ma/resizer/v2/https%3A%2F%2Fcloudfront-eu-central-1.images.arcpublishing.com%2Fle360%2FJ7BJEUWUGBBRRHWC4OXATZR2L4.jpeg?auth=39a0a9b85b28cb28d0d357cd9ca7d34ab1a7e256b690daf5a015768957774368&width=1216") no-repeat center center/cover;
+  background: url("https://e0.pxfuel.com/wallpapers/911/826/desktop-wallpaper-wydad-wydad-athletic-club.jpg") no-repeat center center/cover;
   height: 120vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: white;
+  color: rgb(255, 255, 255);
   position: relative;
 }
 
@@ -19,7 +19,7 @@
 
 .hero h1 {
   font-size: 3rem;
-  color: #ffdf00;
+  color: #ff0000;
 }
 
 .hero p {

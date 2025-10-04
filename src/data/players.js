@@ -1,4 +1,3 @@
-import { buttonBaseClasses, stackClasses } from "@mui/material";
 
 const players = [
   {

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import players from '../data/players';
 import staff from '../data/staff';
-
+import "../pages/Team.css";
 const Team = () => {
   const groupedPlayers = {
     Attaquants: players.filter(p =>
@@ -31,7 +31,8 @@ const Team = () => {
   };
 
   return (
-    <div className="container mt-4">
+    <div className="team-page">
+      <div className="contrainer mt-4"></div>
       <h2 className="text-center mb-4">Équipe du Wydad AC</h2>
 
       {Object.keys(groupedPlayers).map(category => (

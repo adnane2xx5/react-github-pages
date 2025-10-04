@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home';
 import Team from './pages/Team';
@@ -11,15 +11,12 @@ import Presidents from './pages/Presidents';
 import Contact from './pages/Contact';
 import './App.css';
 function App() {
-  const [loading, setLoading] = useState(true);
+  const [showSplash, setShowSplash] = useState(true);
 
-  useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 3000); //3 secondes
-    return () => clearTimeout(timer);
-  }, []);
 
-  if (loading) return <SplashScreen />;
-
+  if (showSplash) {
+    return <SplashScreen onFinish={() => setShowSplash(false)} />;
+  }
   return (
     <Router>
       <nav className="navbar navbar-expand-lg navbar-dark bg-danger sticky-top shadow-sm">
