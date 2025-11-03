@@ -289,7 +289,7 @@ const players = [
 {
   id: 23,
   name: "ZOUHAIR EL MOUTARAJI",
-  number: 7,
+  number: 37,
   position: "Attaquant",
   nationality: "Marocain 🇲🇦",
   image: "https://africafoot.com/wp-content/uploads/2024/10/Zouheir-El-Moutaraji.webp",
@@ -312,6 +312,19 @@ const players = [
     matchs: 0
   }
 },
+{
+  id: 25,
+  name: "HAKIM ZIYACH",
+  Number: 7,
+  position: "Attaquant",
+  nationality: "Marocain 🇲🇦",
+  image:"https://wydad.net/medias/players/hakim-ziyech.webp",
+  stats: {
+    buts:0,
+    passes: 0,
+    matchs: 0,
+  }
+}
 
 
 ];
