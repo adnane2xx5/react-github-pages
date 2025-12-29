@@ -1,0 +1,16 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+pydantic
+python-multipart
+aiofiles
+Pillow
+opencv-python-headless
+scikit-learn
+joblib
+apscheduler
+python-dotenv
+requests
+python-multipart
+openai
+pydantic
